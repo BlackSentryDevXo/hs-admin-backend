@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>The Hottseat</title>
+
+        <link rel="stylesheet" href="libs/css/vendor.css">
+        <link rel="stylesheet" href="libs/css/main.css">
+        <link rel="stylesheet" href="libs/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="libs/css/lf-ng-md-file-input.min.css">
+        <link rel="stylesheet" href="libs/css/sweet-alert.css">
+        <link rel="stylesheet" href="libs/css/google.css">
+        <link rel="stylesheet" href="libs/css/editor.min.css">
+        <link rel="stylesheet" href="libs/css/md-data-table.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" type="text/css"/>
+        <link rel="stylesheet" href="custom/css/style.css">
+    </head>
+    <body ng-app="quizApp" class="extended">
+        <div ui-view=""></div>
+        <script type="text/javascript" src="libs/scripts/vendor.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.5/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/firebase.js"></script>
+        <script type="text/javascript" src="libs/scripts/md-data-table.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/ng-file-upload.min.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBZtK5_-J1DFWLBFpLBIOkeK9D8ZDfqJ3g",
+                authDomain: "quizgame-4f2e3.firebaseapp.com",
+                databaseURL: "https://quizgame-4f2e3.firebaseio.com",
+                projectId: "quizgame-4f2e3",
+                storageBucket: "quizgame-4f2e3.appspot.com",
+                messagingSenderId: "696713219095"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="libs/scripts/angularfire.min.js"></script>
+        <script type="text/javascript" src="custom/script/app.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/loginCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/dashbordCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/sidenavCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/HomeCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/admin/AdminCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/admin/AccountCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/services/serviceCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/admin/QuestionnnaireCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/brand/BrandCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/category/CategoryCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/questions/QuestionsCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/points/leaderboardCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/prizesCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/brand/themeCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/themeCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/adsCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/PowerCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/userCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/smsCtrl.js"></script>
+        <!-- I added this -->
+        <script type="text/javascript" src="custom/script/controllers/promoCtrl.js"></script>
+        <!--  -->
+        <script type="text/javascript" src="custom/script/controllers/subscriptionCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/teamCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/controllers/assetCtrl.js"></script>
+        <script type="text/javascript" src="custom/script/services/auth.js"></script>
+        <script type="text/javascript" src="custom/script/services/firebase_auth.js"></script>
+        <script type="text/javascript" src="custom/script/services/sp.js"></script>
+        <script type="text/javascript" src="libs/scripts/lf-ng-md-file-input.js"></script>
+        <script type="text/javascript" src="libs/scripts/fileSaver.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-csv/0.3.6/ng-csv.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/0.1.0/ng-google-chart.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/sweet-alert.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/wysiwyg.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/json-export-excel.min.js"></script>
+        <script type="text/javascript" src="libs/scripts/clPaging.js"></script>
+    </body>
+</html>

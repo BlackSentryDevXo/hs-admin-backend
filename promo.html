@@ -1,0 +1,57 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col" style="background: white; padding: 20px;">
+        <div class="invoice-logo" style="margin-bottom: 20px;">
+            Welcome PopUp
+            <div class="lighter"></div>
+        </div>
+            <form class="form">
+                <div>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <div>
+                            <label>Promo Title Text</label> <br>
+                            <textarea id="titlebox" ng-model="text" name="PromoTitleText" ></textarea>
+                        </div>
+                    </md-input-container>
+                </div>
+                
+                <div>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <div>
+                            <label>Promo Game Url</label> <br>
+                            <input id="secbox"  name="PromoGameUrl"></input>
+                        </div>
+                    </md-input-container>
+                </div>
+        
+                <div>
+                    <label>Promo Image</label>
+                    <label id="UpProgress">: Progress</label>
+                    <div>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/quizgame-4f2e3.appspot.com/o/PromoImage%2FpromoImage.png?alt=media&token=a46adf54-8539-46fb-aa52-15b7b15bc2c9" alt="Current Image" width="250" height="250">
+                    </div>
+                    <div>
+                        <button id="selectImg"> Select Image for Cover</button>
+                        <button id="uploadImg"> Upload Image</button>
+                    </div>
+                </div>
+                <br><br><br>
+                <div>
+                    <button id="insert">SAVE</button>
+                        <br><br>
+                    <button id="delete">RESET</button>
+                </div>
+            </form>
+
+            <script>
+                var database = firebase.database();
+                var ref = database.ref('data/');
+                ref.on("value", gotData);
+        
+                function gotData(data){
+                document.getElementById('titlebox').value = data.val().promo.NameOfTitle;
+                document.getElementById('secbox').value = data.val().promo.Url;
+            }
+
+            </script>
+    </div>
+</div>
